@@ -20,12 +20,12 @@
     		<!-- Página principal -->
 		<div data-role="page" id="inicio">
 			<div data-role="header">
-				<h1 id="app-name">Inicio</h1>
+				<h1 id="app-name">Home</h1>
 			</div>
 	
 			<div role="main" class="ui-content">
-				<a class="ui-btn ui-shadow ui-corner-all ui-btn-b" data-direction="reverse" href="javascript:geolocalizar()">Cerca de mi</a>
-				<a id="btn-buscar" class="ui-btn ui-shadow ui-corner-all ui-btn-b" data-direction="reverse" href="javascript:cargarCategoria()">Búsqueda por categoría</a>
+				<a class="ui-btn ui-shadow ui-corner-all ui-btn-b" data-direction="reverse" href="javascript:geolocalizar()">Near me</a>
+				<a id="btn-buscar" class="ui-btn ui-shadow ui-corner-all ui-btn-b" data-direction="reverse" href="javascript:cargarCategoria()">Search by category</a>
 				<a id ="btn-gb" class="ui-btn ui-shadow ui-corner-all ui-btn-b" style="display: none" data-direction="reverse" href="#busqueda">Búsqueda por texto libre</a>
 				
 			</div>
@@ -41,14 +41,14 @@
 		<!-- Página localizador -->
 		<div data-role="page" id="busqueda">
 			<div data-role="header">
-				<a href="javascript:inicio()" data-icon="back">Atrás</a>
-				<h1>Búsqueda</h1>
-				<a href="javascript:inicio()" data-icon="home">Inicio</a>
+				<a href="javascript:inicio()" data-icon="back">Back</a>
+				<h1>Search</h1>
+				<a href="javascript:inicio()" data-icon="home">Home</a>
 			</div>
 			
 			<div role="main" class="ui-content">
 				<input id="txtBusqueda" type="search">
-				<a class="ui-btn ui-shadow ui-corner-all ui-btn-b" href="javascript:buscarGeobusquedas($('#txtBusqueda').val(),listarResultadosGB)">Buscar</a>			    
+				<a class="ui-btn ui-shadow ui-corner-all ui-btn-b" href="javascript:buscarGeobusquedas($('#txtBusqueda').val(),listarResultadosGB)">Search</a>			    
 				<ul id="listSuggest" data-role="listview" data-inset="true"></ul>
 			</div>
 			
@@ -58,9 +58,9 @@
 		<!-- Página localizador -->
 		<div data-role="page" id="localizador">
 			<div data-role="header">
-				<a href="javascript:inicio()" data-icon="back">Atrás</a>
+				<a href="javascript:inicio()" data-icon="back">Back</a>
 				<h1>Localizador</h1>
-				<a href="javascript:inicio()" data-icon="home">Inicio</a>
+				<a href="javascript:inicio()" data-icon="home">Home</a>
 			</div>
 			
 			<div role="main" class="ui-content">
@@ -85,9 +85,9 @@
 		<!-- Página Categorías -->
 		<div data-role="page" id="categorias">
 			<div data-role="header">
-				<a href="javascript:atras()" data-icon="back">Atrás</a>
-				<h1>Categorías</h1>
-				<a href="javascript:inicio()" data-icon="home">Inicio</a>
+				<a href="javascript:atras()" data-icon="back">Back</a>
+				<h1>Categories</h1>
+				<a href="javascript:inicio()" data-icon="home">Home</a>
 			</div>
 	
 			<div role="main" class="ui-content" id="contenidoCategorias">
@@ -108,13 +108,13 @@
 		<!-- Página datos -->
 		<div data-role="page" id="datos">
 			<div data-role="header" data-position="fixed">
-				<a href="javascript:atras()" data-icon="back">Atrás</a>
-				<h1 id="titleDatos">Datos</h1>
-				<a href="javascript:inicio()" data-icon="home">Inicio</a>
+				<a href="javascript:atras()" data-icon="back">Back</a>
+				<h1 id="titleDatos">Data</h1>
+				<a href="javascript:inicio()" data-icon="home">Home</a>
 			</div>
 			<div role="main" class="ui-content">
 				
-				<ul id="listaDatos" data-role="listview" data-filter="true" data-filter-placeholder="Filtra resultados"></ul>
+				<ul id="listaDatos" data-role="listview" data-filter="true" data-filter-placeholder="Filter"></ul>
 
 				
 			</div>
@@ -125,9 +125,9 @@
 		<!-- Página mapa -->
 		<div data-role="page" id="mapa">
 			<div id="mapa-header" data-role="header" data-position="fixed" data-fullscreen="true">
-				<a href="javascript:atrasMapa()" data-icon="back">Atrás</a>
-				<h1>Mapa</h1>
-				<a href="javascript:inicio()" data-icon="home">Inicio</a>
+				<a href="javascript:atrasMapa()" data-icon="back">Back</a>
+				<h1>Map</h1>
+				<a href="javascript:inicio()" data-icon="home">Home</a>
 			</div>
 			<div id="map" role="main" class="ui-content" style="padding:0px;">
 				<iframe id="mapea" style="position:absolute; width:100%; height:100%;border:none;">
